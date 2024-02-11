@@ -38,6 +38,19 @@ p {
     padding-right: 10%;
     
 }
+.photo_gallery_travel1, .photo_gallery_travel2, .photo_gallery_travel3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.photo_gallery_pets1, .photo_gallery_pets2, .photo_gallery_pets3, .photo_gallery_pets4, .photo_gallery_pets5 {
+     display:grid;
+     grid-template-columns: repeat(3, 1fr);
+     
+}
+.photos_recipe1, .photos_recipe2, .photos_recipe3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
 #nuonuo{
     width: 90px
@@ -58,7 +71,7 @@ p {
 #banana{
     width: 100px
 }
-img {
+img,video {
     width: 175px;
     display:inline-block;
     margin-left: auto;
@@ -114,4 +127,15 @@ div.spaghetti h4, div.peppers h4, div.banana h4, div.bacon h4, div.Charli h4, di
     font-weight: 800;
     padding-bottom: 3%;
     padding-top: 3%;
+}
+@media (prefers-reduced-motion:reduce) {
+    .animation1, .animation2, .animation3 {
+      animation: none;
+      
+    }
+  }
+
+  .current-page {
+    font-weight: bold;
+    text-decoration: underline; 
 }
